@@ -25,14 +25,14 @@ header nav{
     gap: 15px; /* Espacio entre los enlaces */
 }
 header nav a{
-    color: #bfb5b582; /* Color de texto blanco para los enlaces */
+    color: #922a2a00; /* Color de texto blanco para los enlaces */
     padding: 5px 10px; /* Espaciado interno de los enlaces */
     font-size: 16px; /* Tamaño de fuente de los enlaces */
     transition: 0.2s; /* Transición suave para efectos hover */
     text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 header nav a:hover{
-    background: rgba(255, 4, 163, 0.839); /* Fondo semi-transparente al pasar el cursor */
+    background: rgba(255, 4, 163, 0.564); /* Fondo semi-transparente al pasar el cursor */
     border-radius: 5px; /* Bordes redondeados en estado hover */
 }
 /* Logo en el encabezado */
@@ -48,7 +48,7 @@ header .logo img {
 /* Estilos del carrusel */
 .carousel{
     width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: calc(100vh - 80px); /* Altura de la ventana menos el alto del encabezado */
+    height: calc(105vh - 27px); /* Altura de la ventana menos el alto del encabezado */
     margin-top: -80px; /* Compensa el espacio ocupado por el encabezado */
     overflow: hidden; /* Oculta contenido que se desborda */
     position: relative; /* Posicionamiento relativo para elementos hijos posicionados absolutamente */
@@ -102,11 +102,11 @@ header .logo img {
 /* Estilos para el contenido dentro de cada elemento del carrusel */
 .list .item .content{
     position: absolute; /* Posicionamiento dentro del item */
-    top: 18%; /* Centra verticalmente */
+    top: 25%; /* Centra verticalmente */
     left: 25px; /* Margen desde el lado izquierdo */
     transform: translateY(-50%); /* Ajusta la posición para centrar */
     width: 400px; /* Ancho del contenido */
-    color: #ffffff; /* Color del texto */
+    color: #1aa8af; /* Color del texto */
     display: none; /* Oculta el contenido por defecto */
     text-align: left; /* Alinea el texto a la izquierda */
 }
@@ -117,12 +117,12 @@ header .logo img {
 
 /* Caja glasmórfica */
 .glass-container {
-    background: rgba(79, 79, 79, 0.273); /* Fondo semi-transparente oscuro */
+    background: rgba(53, 53, 53, 0.028); /* Fondo semi-transparente oscuro */
     border-radius: 15px; /* Bordes redondeados */
     padding: 25px; /* Espaciado interno */
     backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
     -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
+    border: 1px solid rgba(29, 29, 29, 0.219); /* Borde semi-transparente */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la caja */
     color: #ffffff; /* Color del texto */
     text-shadow: #000000 4px; /* Sombra del texto para efecto de relieve */
@@ -270,3 +270,7 @@ header .logo img {
         font-size: 14px; /* Reduce el tamaño de fuente de los botones */
     }
 }
+
+
+
+
