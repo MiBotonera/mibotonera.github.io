@@ -216,8 +216,8 @@ header .logo img {
 }
 /* Opcional: Añadir una transición suave */
 .running-bar {
-    animation: runningTime 5s linear infinite; /* Ajusta el tiempo y la curva de animación según tus necesidades */
-    transition: width 0.3s ease-out; /* Transición para suavizar cambios */
+    animation: runningTime cubic-bezier(0.175, 0.885, 0.32, 1.275) linear infinite; /* Ajusta el tiempo y la curva de animación según tus necesidades */
+    transition: width 0.0s ease-out; /* Transición para suavizar cambios */
 }
 /* Animaciones de texto al aparecer */
 @keyframes animate {
@@ -227,7 +227,7 @@ header .logo img {
         filter: blur(10px); /* Con desenfoque */
     }
     to{
-        opacity: 1; /* Termina completamente opaco */
+        opacity: 0; /* Termina completamente opaco */
         transform: translateY(0); /* Posición normal */
         filter: blur(0); /* Sin desenfoque */
     }
@@ -253,16 +253,16 @@ header .logo img {
         font-size: 12px; /* Reduce el tamaño de los enlaces de navegación */
     }
     .glass-container .title{
-        font-size: 16px; /* Tamaño del título más pequeño */
+        font-size: 12px; /* Tamaño del título más pequeño */
     }
     .glass-container .name{
-        font-size: 12px; /* Tamaño del nombre más pequeño */
+        font-size: 10px; /* Tamaño del nombre más pequeño */
     }
     .glass-container .des{
-        font-size: 10px; /* Tamaño de la descripción más pequeño */
+        font-size: 8px; /* Tamaño de la descripción más pequeño */
     }
     .glass-container .btn button{
-        padding: 3px 5px; /* Reduce el espaciado interno de los botones */
+        padding: 2px 4px; /* Reduce el espaciado interno de los botones */
         font-size: 14px; /* Reduce el tamaño de fuente de los botones */
     }
 }
