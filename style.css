@@ -207,17 +207,26 @@ header .logo img {
     0% {
         width: 0%; 
     }
-    50% {
-        width: 50%;
+    20% {
+        width: 0%; 
+    }
+    40% {
+        width: 0%; 
+    }
+    60% {
+        width: 0%; 
+    }
+    80% {
+        width: 0%; 
     }
     100% {
-        width: 100%;
+        width: 50%;
     }
 }
-/* Opcional: Añadir una transición suave */
+/* Optimización de la animación y transición de la barra */
 .running-bar {
-    animation: runningTime cubic-bezier(0.175, 0.885, 0.32, 1.275) linear infinite; /* Ajusta el tiempo y la curva de animación según tus necesidades */
-    transition: width 0.0s ease-out; /* Transición para suavizar cambios */
+    animation: runningTime 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite; /* Ajusta el tiempo a tu necesidad */
+    transition: width 0.3s ease-out; /* Ajusta la duración para suavidad */
 }
 /* Animaciones de texto al aparecer */
 @keyframes animate {
