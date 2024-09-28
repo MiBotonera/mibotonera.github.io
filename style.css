@@ -59,18 +59,18 @@ header .logo img {
     height: 100%; /* Altura completa */
 }
 .carousel .list .item{
-    width: 140px; /* Ancho de cada elemento del carrusel */
-    height: 170px; /* Altura de cada elemento */
+    width:150px; /* Ancho de cada elemento del carrusel */
+    height: 100px; /* Altura de cada elemento */
     position: absolute; /* Permite posicionar cada item en lugares específicos */
-    top:85%; /* Centra verticalmente */
+    top:90%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajusta la posición para centrar verticalmente */
-    left: 100%; /* Posiciona el elemento a un 70% desde la izquierda */
+    left: 90%; /* Posiciona el elemento a un 70% desde la izquierda */
     border-radius: 20px; /* Bordes redondeados para los items */
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.495); /* Agrega sombra para profundidad */
     background-position: center; /* Centra la imagen de fondo */
     background-size: cover; /* La imagen de fondo cubre todo el contenedor */
     z-index: 100; /* Controla la superposición de elementos */
-    transition: 1s; /* Transición suave para animaciones */
+    transition: 2s; /* Transición suave para animaciones */
 }
 /* Estilos específicos para los dos primeros elementos del carrusel */
 .carousel .list .item:nth-child(1),
@@ -93,10 +93,10 @@ header .logo img {
     left: calc(50% + 400px); /* Continúa desplazando los elementos */
 }
 .carousel .list .item:nth-child(6){
-    left: calc(50% + 00px); /* Ajusta para el sexto elemento */
+    left: calc(50% + 600px); /* Ajusta para el sexto elemento */
 }
 .carousel .list .item:nth-child(n+7){
-    left: calc(50% + 700px); /* Posiciona elementos a partir del séptimo */
+    left: calc(50% + 800px); /* Posiciona elementos a partir del séptimo */
     opacity: 0; /* Oculta los elementos adicionales */
 }
 /* Estilos para el contenido dentro de cada elemento del carrusel */
@@ -116,8 +116,8 @@ header .logo img {
 /* Caja glasmórfica */
 .glass-container {
     background: rgba(53, 53, 53, 0.028); /* Fondo semi-transparente oscuro */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
     backdrop-filter: blur(5px); /* Efecto de desenfoque de fondo */
     -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
     border: 1px solid rgba(29, 29, 29, 0.219); /* Borde semi-transparente */
@@ -202,10 +202,22 @@ header .logo img {
     top: 0; /* Posiciona en la parte superior */
     animation: runningTime 7s linear 1 forwards; /* Animación que llena la barra en 7 segundos */
 }
-/* Animación para la barra de tiempo */
-@keyframes runningTime { 
-    from{width: 0%;} /* Comienza sin ancho */
-    to{width: 100%;} /* Termina ocupando el 100% del ancho */
+/* Animación optimizada para la barra de tiempo */
+@keyframes runningTime {
+    0% {
+        width: 0%; 
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+/* Opcional: Añadir una transición suave */
+.running-bar {
+    animation: runningTime 5s linear infinite; /* Ajusta el tiempo y la curva de animación según tus necesidades */
+    transition: width 0.3s ease-out; /* Transición para suavizar cambios */
 }
 /* Animaciones de texto al aparecer */
 @keyframes animate {
@@ -238,19 +250,19 @@ header .logo img {
 /* Diseño responsivo para pantallas pequeñas */
 @media screen and (max-width: 690px){
     header nav a{
-        font-size: 14px; /* Reduce el tamaño de los enlaces de navegación */
+        font-size: 12px; /* Reduce el tamaño de los enlaces de navegación */
     }
     .glass-container .title{
-        font-size: 20px; /* Tamaño del título más pequeño */
+        font-size: 16px; /* Tamaño del título más pequeño */
     }
     .glass-container .name{
-        font-size: 15px; /* Tamaño del nombre más pequeño */
+        font-size: 12px; /* Tamaño del nombre más pequeño */
     }
     .glass-container .des{
-        font-size: 12px; /* Tamaño de la descripción más pequeño */
+        font-size: 10px; /* Tamaño de la descripción más pequeño */
     }
     .glass-container .btn button{
-        padding: 5px 9px; /* Reduce el espaciado interno de los botones */
+        padding: 3px 5px; /* Reduce el espaciado interno de los botones */
         font-size: 14px; /* Reduce el tamaño de fuente de los botones */
     }
 }
