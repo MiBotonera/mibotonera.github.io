@@ -115,28 +115,28 @@ header .logo img {
 }
 /* Caja glasmórfica */
 .glass-container {
-    background: rgba(53, 53, 53, 0.028); /* Fondo semi-transparente oscuro */
+    background: rgba(36, 36, 36, 0.028); /* Fondo semi-transparente oscuro */
     border-radius: 5px; /* Bordes redondeados */
     padding: 5px; /* Espaciado interno */
     backdrop-filter: blur(5px); /* Efecto de desenfoque de fondo */
     -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
-    border: 1px solid rgba(29, 29, 29, 0.219); /* Borde semi-transparente */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la caja */
-    color: #ffffff; /* Color del texto */
+    border: 1px solid rgba(29, 29, 29, 0.073); /* Borde semi-transparente */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06); /* Sombra alrededor de la caja */
+    color: #000000; /* Color del texto */
     text-shadow: #000000 8px; /* Sombra del texto para efecto de relieve */
     text-align: left; /* Alinea el texto a la izquierda */
     font-weight: bold; /* Negrita para resaltar */
 }
 /* Estilos del texto y botones dentro de la caja glasmórfica */
 .glass-container .title{
-    font-size: 30px; /* Tamaño de fuente grande para el título */
+    font-size: 15px; /* Tamaño de fuente grande para el título */
     font-weight: bold; /* Negrita para resaltar */
-    margin-bottom: 10px; /* Espacio debajo del título */
+    margin-bottom: 14px; /* Espacio debajo del título */
     text-shadow: none; /* Elimina sombras adicionales en el texto */
 }
 .glass-container .name{
     font-size: 24px; /* Tamaño de fuente para el nombre */
-    margin-bottom: 10px; /* Espacio debajo del nombre */
+    margin-bottom: 5%; /* Espacio debajo del nombre */
 }
 .glass-container .des{
     font-size: 16px; /* Tamaño de fuente para la descripción */
@@ -167,12 +167,12 @@ header .logo img {
 /* Flechas de navegación en el carrusel */
 .arrows{
     position: absolute; /* Posicionamiento dentro del carrusel */
-    bottom: 20px; /* Separación desde la parte inferior */
-    right: 50%; /* Alineación horizontal central */
-    transform: translateX(50%); /* Ajuste para centrar las flechas */
+    bottom: 30px; /* Separación desde la parte inferior */
+    right: 70%; /* Alineación horizontal central */
+    transform: translateX(5%); /* Ajuste para centrar las flechas */
     z-index: 100; /* Asegura que las flechas estén por encima de otros elementos */
     display: flex; /* Flexbox para las flechas */
-    gap: 10px; /* Espacio entre las flechas */
+    gap: 40px; /* Espacio entre las flechas */
 }
 .arrows button{
     width: 35px; /* Ancho de las flechas */
@@ -200,7 +200,7 @@ header .logo img {
     background-color: #000000cb; /* Color de la barra */
     left: 0; /* Alinea a la izquierda */
     top: 0; /* Posiciona en la parte superior */
-    animation: runningTime 7s linear 1 forwards; /* Animación que llena la barra en 7 segundos */
+    animation: runningTime 4s linear 1 forwards; /* Animación que llena la barra en 7 segundos */
 }
 /* Animación optimizada para la barra de tiempo */
 @keyframes runningTime {
@@ -225,8 +225,8 @@ header .logo img {
 }
 /* Optimización de la animación y transición de la barra */
 .running-bar {
-    animation: runningTime 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite; /* Ajusta el tiempo a tu necesidad */
-    transition: width 0.3s ease-out; /* Ajusta la duración para suavidad */
+    animation: runningTime 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite; /* Ajusta el tiempo a tu necesidad */
+    transition: width 0.0s ease-out; /* Ajusta la duración para suavidad */
 }
 /* Animaciones de texto al aparecer */
 @keyframes animate {
