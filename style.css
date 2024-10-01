@@ -63,14 +63,14 @@ header .logo img {
     height: 100px; /* Altura de cada elemento */
     position: absolute; /* Permite posicionar cada item en lugares específicos */
     top:90%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajusta la posición para centrar verticalmente */
+    transform: translateY(-100%); /* Ajusta la posición para centrar verticalmente */
     left: 90%; /* Posiciona el elemento a un 70% desde la izquierda */
     border-radius: 20px; /* Bordes redondeados para los items */
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.495); /* Agrega sombra para profundidad */
     background-position: center; /* Centra la imagen de fondo */
     background-size: cover; /* La imagen de fondo cubre todo el contenedor */
     z-index: 100; /* Controla la superposición de elementos */
-    transition: 2s; /* Transición suave para animaciones */
+    transition: 1s; /* Transición suave para animaciones */
 }
 /* Estilos específicos para los dos primeros elementos del carrusel */
 .carousel .list .item:nth-child(1),
@@ -97,7 +97,7 @@ header .logo img {
 }
 .carousel .list .item:nth-child(n+7){
     left: calc(50% + 800px); /* Posiciona elementos a partir del séptimo */
-    opacity: 0; /* Oculta los elementos adicionales */
+    opacity: 1MS; /* Oculta los elementos adicionales */
 }
 /* Estilos para el contenido dentro de cada elemento del carrusel */
 .list .item .content{
